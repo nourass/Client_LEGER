@@ -1,0 +1,132 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Conteneur principal */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Titre */
+.profile-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Section de la photo de profil */
+
+
+/* Formulaire */
+.profile-form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Boutons de sauvegarde et actions */
+.save-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.action-buttons {
+    margin-top: 30px;
+}
+
+.action-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button {
+    background-color: #ffc107;
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: #e0a800;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-container h1 {
+        font-size: 24px;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+
+    .save-button, .action-buttons a {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+ 
+/* Style de la barre de navigation */
+nav {
+    background-color: #007bff; /* Bleu foncé pour le fond de la barre */
+    padding: 10px 0;
+    width: 100%;
+    display: flex; /* Flexbox pour organiser les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centrer verticalement */
+    box-sizing: border-box;
+    z-index: 1000;
+}
+ 
+ 
+/* Style global du lien */
+.nav-link {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte verticalement */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: inherit; /* Hérite de la couleur du texte parent */
+    margin: 10px 0; /* Ajoute de l'espace autour du lien */
+}
+ 
+/* Style de l'image */
+.nav-link img {
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+ 
+/* Style du texte */
+.filelec_nav {
+    font-size: 1.5rem; /* Taille du texte */
+    margin: 0; /* Retire l'espacement par défaut autour du titre */
+    font-weight: bold; /* Met en gras le titre */
+}
+ 
+ 
+ 
+.nav-content img {
+    margin-bottom: 10px; /* Espace entre l'image et le titre */
+}
+ 
+ 
+/* Style des liens de navigation */
+.link-container {
+    margin: 0 15px;
+    display: inline-block; /* Afficher les éléments sur une ligne */
+}
+ 
+.link-container a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Changement : Liens noirs pour plus de contraste */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px; /* Réduction de la taille de la police */
+    transition: background-color 0.3s ease;
+    display: block; /* Le padding affecte toute la zone du lien */
+}
+ 
+.link-container a:hover {
+    background-color: #0056b3; /* Couleur de survol ajustée pour correspondre au bleu principal */
+}
+ 
+/* Style pour le titre */
+.filelec_nav{
+    text-align: left; /* Aligner à gauche */
+    margin-left: 20px; /* Ajouter un espace depuis le mur gauche */
+    color: rgb(255, 255, 255);
+    font-size: 32px; /* Taille de police augmentée */
+}
+ 
+/* Conteneur pour les éléments à droite */
+.right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pousse les éléments vers la droite */
+}
+ 
+/* Conteneur du profil */
+.profile-container-nav {
+    display: flex; /* Flexbox pour organiser les éléments */
+    align-items: center; /* Centrer verticalement */
+    position: relative; /* Nécessaire pour positionner le menu déroulant */
+}
+ 
+/* Logo de profil */
+.profile-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    margin-left: 40px; /* Ajoute un espacement de 40px vers la gauche */
+}
+ 
+ 
+.profile-logo:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+ 
+/* Menu déroulant */
+.dropdown {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    top: 40px; /* Sous le logo */
+    right: 0; /* Ajustement pour aligner à droite */
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+ 
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block; /* Chaque lien occupe une ligne */
+    transition: background-color 0.2s ease;
+}
+ 
+.dropdown a:hover {
+    background-color: #555;
+}
+ 
+/* Affichage du menu déroulant au survol */
+.profile-container-nav:hover .dropdown {
+    display: block;
+}
+ 
+/* Conteneur du panier */
+.panier-container-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+ 
+/* Logo du panier avec une taille réduite */
+.panier-logo {
+    width: 50px; /* Réduire la largeur */
+    height: 50px; /* Réduire la hauteur */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+ 
+.panier-logo:hover {
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+ 
+ 
+ 
+ 

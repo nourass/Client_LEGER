@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #007BFF;
+}
+
+.contact-container, .contact-list {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+input, textarea {
+    width: 50%;
+    height: 30px; /* Réduire la hauteur des champs */
+    padding: 5px; /* Ajuster le padding pour un rendu plus compact */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+
+img.logo {
+    height: 300px;
+    width: 300px;
+}
+

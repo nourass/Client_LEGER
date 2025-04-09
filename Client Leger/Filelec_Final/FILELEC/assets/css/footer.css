@@ -1,0 +1,52 @@
+/* Style général du footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenu du footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu du footer */
+}
+
+/* Style du texte du footer */
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Liens dans le footer */
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/* Conteneur des liens sociaux */
+.social-links {
+    margin-top: 10px;
+}
+
+/* Espacement entre les liens */
+.social-links a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Effet de survol pour les liens sociaux */
+.social-links a:hover {
+    color: #f1f1f1;
+}

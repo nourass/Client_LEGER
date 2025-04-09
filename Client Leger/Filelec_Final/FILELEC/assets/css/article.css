@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.article-page {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.article-page h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-page p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.article-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-page img:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .article-page {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .article-page h1 {
+        font-size: 20px;
+    }
+
+    .article-page p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .back-btn {
+        padding: 10px 16px;
+    }
+}
+
+button[name="Ajouter"] {
+    background-color: #28a745;
+    /* Vert agréable */
+    color: white;
+    /* Texte blanc */
+    font-size: 16px;
+    /* Taille du texte */
+    font-weight: bold;
+    /* Texte en gras */
+    padding: 10px 20px;
+    /* Espace intérieur */
+    border: none;
+    /* Supprime la bordure */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur en mode "cliquable" */
+    transition: background-color 0.3s ease-in-out;
+    /* Effet de transition */
+}
+
+button[name="Ajouter"]:hover {
+    background-color: #218838;
+    /* Vert foncé au survol */
+}
+
+button[name="Ajouter"]:active {
+    background-color: #1e7e34;
+    /* Vert encore plus foncé au clic */
+}
+
+/* Style du label */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Style du menu déroulant */
+select {
+    width: 100%;
+    max-width: 150px;
+    /* Taille ajustable */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Effet au focus */
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Effet au survol */
+select:hover {
+    border-color: #0056b3;
+}

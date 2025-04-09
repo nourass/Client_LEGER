@@ -1,0 +1,176 @@
+.nav-cata {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1000;
+}
+ 
+/* Styles pour la liste de navigation */
+.nav-cata ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; /* Espacement égal entre les éléments */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* S'assurer que la liste occupe toute la largeur disponible */
+    text-align: center; /* Centrer le texte des éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+}
+ 
+/* Éléments de la navigation */
+.nav-cata > ul > li {
+    margin-bottom: 0;
+    position: relative;
+    flex: 1; /* Chaque élément occupe un espace égal */
+}
+ 
+/* Liens de navigation */
+.nav-cata a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    display: block;
+    text-align: center; /* Centrer le texte à l'intérieur du lien */
+}
+ 
+.nav-cata a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+ 
+/* Sous-menus */
+.nav-cata ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #007BFF;
+    width: 200px;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Afficher le sous-menu au survol */
+.nav-cata li:hover > ul {
+    display: block;
+}
+ 
+/* Liens du sous-menu */
+.nav-cata ul ul li a {
+    font-size: 16px;
+    padding: 10px;
+}
+ 
+/* Contenu principal */
+.content {
+    margin-top: 120px; /* Espace pour la barre de navigation */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+}
+ 
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+ 
+/* Conteneur des articles */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+/* Carte d'article */
+.article {
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+.article:hover {
+    transform: scale(1.03);
+}
+ 
+/* Image de l'article */
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+ 
+/* Titre et description */
+.article h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+ 
+.article p {
+    font-size: 14px;
+    color: #555;
+}
+ 
+/* Prix */
+.price {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+ 
+/* Bouton voir l'article */
+.view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+ 
+.view-button:hover {
+    background-color: #218838;
+}
+ 
+/* 🟢 Responsive pour mobiles */
+@media (max-width: 768px) {
+    .nav-cata {
+        padding: 15px;
+    }
+ 
+    .content {
+        padding: 20px;
+    }
+ 
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .article {
+        width: 90%;
+        max-width: 400px;
+    }
+ 
+    h1 {
+        text-align: center; /* Centrer le titre */
+        margin-bottom: 30px; /* Espacer de 30px l'élément en dessous */
+        font-size: 24px; /* Ajuster la taille du titre si nécessaire */
+    }
+}
